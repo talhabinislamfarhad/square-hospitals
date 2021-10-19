@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/doc-1.jpg?raw=true",
+        "name": "Aliza Rahman",
+        "Specialty": "Allergists"
+    },
+    {
+        "id": 2,
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/doc-2.jpg?raw=true",
+        "name": "HNM Razzak",
+        "Specialty": "Dermatologists"
+    },
+    {
+        "id": 3,
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/doc-3.jpg?raw=true",
+        "name": "SR Shafim",
+        "Specialty": "Ophthalmologists"
+    },
+    {
+        "id": 4,
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/doc-4.jpg?raw=true",
+        "name": "Nazmol Rahman",
+        "Specialty": "Obstetrician/gynecologists"
+    },
+    {
+        "id": 5,
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/doc-5.jpg?raw=true",
+        "name": "Md Monir Hossain",
+        "Specialty": "Cardiologists"
+    },
+    {
+        "id": 6,
+        "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/doc-6.jpg?raw=true",
+        "name": "Md Kabir Hossain",
+        "Specialty": "Endocrinologists"
+    }
+]

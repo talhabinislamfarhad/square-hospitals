@@ -1,0 +1,35 @@
+.appointment .row{
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.appointment .row form{
+    background: #fff;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.appointment .row form h3{
+    color:var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.appointment .row form .box{
+    width: 100%;
+    margin:.7rem 0;
+    border-radius: .5rem;
+    border:var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+
+.appointment .row form .btn{
+    padding:1rem 4rem;
+}

@@ -25,17 +25,18 @@ const Header = () => {
                             <Nav.Link className="menu-font-size" as={NavLink} to="/services">Services</Nav.Link>
                             <Nav.Link className="menu-font-size" as={NavLink} to="/doctors">Doctors</Nav.Link>
                             <Nav.Link className="menu-font-size" as={NavLink} to="/contact">Contact US</Nav.Link>
-                            <Nav.Link as={NavLink} to="/login">
+                            {!user?.email && <Nav.Link as={NavLink} to="/login">
                                 <Button variant="success" className="m-1 menu-font-size">Log In/Registation</Button>
                             </Nav.Link>
-                            <Nav.Link as={NavLink} to="/appointment">
-                                <Button variant="success" className="m-1 menu-font-size">Appointment</Button>
-                            </Nav.Link>
+                            }
                             {user?.email &&
                                 <NavDropdown className="menu-font-size" title={user.displayName} id="basic-nav-dropdown">
                                     <NavDropdown.Item><input onClick={logout} type="submit" value="LogOut" className="btn" /></NavDropdown.Item>
                                 </NavDropdown>
                             }
+                            <Nav.Link as={NavLink} to="/appointment">
+                                <Button variant="success" className="m-1 menu-font-size">Appointment</Button>
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

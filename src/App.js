@@ -12,6 +12,7 @@ import NotFound from './components/NotFound/NotFound';
 import Doctors from './components/Doctors/Doctors';
 import Footer from './components/Footer/Footer';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -44,9 +45,9 @@ function App() {
             <Route exact path="/registation">
               <Registation></Registation>
             </Route>
-            <Route exact path="/appointment">
+            <PrivateRoute path="/appointment">
               <Appointment></Appointment>
-            </Route>
+            </PrivateRoute>
             <Route exact path="*">
               <NotFound></NotFound>
             </Route>

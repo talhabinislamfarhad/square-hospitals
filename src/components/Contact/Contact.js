@@ -1,7 +1,16 @@
 import React from 'react';
 import './Contact.css';
+import { useHistory, useLocation } from 'react-router-dom';
 
 const Contact = () => {
+    const History = useHistory();
+    const Location = useLocation();
+    const Redirect = Location?.state?.from || "/";
+
+    const handleContact = (e) => {
+        History.push(Redirect);
+    }
+
     return (
         <div>
             {/* Contact section starts  */}
@@ -12,12 +21,12 @@ const Contact = () => {
 
                 <div className="row justify-content-center">
                     <div className="col-md-8">
-                        <form action="">
+                        <form onSubmit={handleContact}>
                             <h3>Hospital Emergency Contact!</h3>
                             <p>Give us your emergency contact information</p>
                             <input type="text" placeholder="your name" className="box" />
-                            <input type="email" placeholder="your email" className="box" />
-                            <textarea type="textarea" placeholder="your message" className="box"></textarea>
+                            <input type="email" placeholder="your email" className="box" required />
+                            <textarea type="textarea" placeholder="your message" className="box" required></textarea>
                             <input type="submit" value="Send" className="btn" />
                         </form>
                     </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import './Home.css';
 // All Components
 import Services from '../Services/Services';
-import Appointment from '../Appointment/Appointment';
 import About from '../About/About';
 // FontAwesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -32,7 +31,7 @@ const Home = () => {
                 <div className="content">
                     <h3>Stay Safe, Stay Healthy</h3>
                     <p>Clinical excellence must be the priority for any health care service provider. SQUARE Hospital ensures the best healthcare service.</p>
-                    <a href="/about" className="btn"> learn more {ChevronRight} </a>
+                    <a href="#0" className="btn"> learn more {ChevronRight} </a>
                 </div>
             </section>
             {/* home section ends  */}
@@ -69,7 +68,6 @@ const Home = () => {
             {/* icons section ends  */}
             <About></About>
             <Services></Services>
-            <Appointment></Appointment>
             {/* review section starts  */}
 
             <section className="review" id="review">
@@ -122,64 +120,6 @@ const Home = () => {
             </section>
 
             {/* review section ends */}
-            {/* blogs section starts */}
-
-            <section className="blogs" id="blogs">
-
-                <h1 className="heading"> our <span>blogs</span> </h1>
-
-                <div className="box-container">
-
-                    <div className="box">
-                        <div className="image">
-                            <img src="image/blog-1.jpg" alt="" />
-                        </div>
-                        <div className="content">
-                            <div className="icon">
-                                <a href="#0"> <i className="fas fa-calendar"></i> 1st may, 2021 </a>
-                                <a href="#0"> <i className="fas fa-user"></i> by admin </a>
-                            </div>
-                            <h3>blog title goes here</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                            <a href="#0" className="btn"> learn more {ChevronRight} </a>
-                        </div>
-                    </div>
-
-                    <div className="box">
-                        <div className="image">
-                            <img src="image/blog-2.jpg" alt="" />
-                        </div>
-                        <div className="content">
-                            <div className="icon">
-                                <a href="#0"> <i className="fas fa-calendar"></i> 1st may, 2021 </a>
-                                <a href="#0"> <i className="fas fa-user"></i> by admin </a>
-                            </div>
-                            <h3>blog title goes here</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                            <a href="#0" className="btn"> learn more <span className="fas fa-chevron-right"></span> </a>
-                        </div>
-                    </div>
-
-                    <div className="box">
-                        <div className="image">
-                            <img src="image/blog-3.jpg" alt="" />
-                        </div>
-                        <div className="content">
-                            <div className="icon">
-                                <a href="#0"> <i className="fas fa-calendar"></i> 1st may, 2021 </a>
-                                <a href="#0"> <i className="fas fa-user"></i> by admin </a>
-                            </div>
-                            <h3>blog title goes here</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, eius.</p>
-                            <a href="#0" className="btn"> learn more <span className="fas fa-chevron-right"></span> </a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-            {/* blogs section ends */}
         </div>
     );
 };

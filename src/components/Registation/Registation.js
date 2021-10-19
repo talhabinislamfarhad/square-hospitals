@@ -1,7 +1,31 @@
 import React from 'react';
+import { Link, useHistory, useLocation } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import './Registation.css';
+// FontAwesome Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const Registation = () => {
+    const { signInUsingGoogle, setError, setUserName, registerNewUser, handleNameChange, handleEmailChange, handlePasswordChange } = useAuth();
+    const History = useHistory();
+    const Location = useLocation();
+    const Redirect = Location?.state?.from || "/";
+
+    const handleRegister = (e) => {
+        e.preventDefault();
+        registerNewUser()
+            .then(result => {
+                setUserName();
+                History.push(Redirect);
+            })
+            .catch(error => {
+                setError(error.message);
+            })
+    }
+
+    const Google = <FontAwesomeIcon icon={faGoogle} />
+
     return (
         <div>
             {/* Registation section starts  */}
@@ -12,13 +36,16 @@ const Registation = () => {
 
                 <div className="row justify-content-center">
                     <div className="col-md-8">
-                        <form action="">
-                            <input type="text" placeholder="Enter your name" className="box" />
-                            <input type="email" placeholder="Enter your email" className="box" />
-                            <input type="password" placeholder="Enter your password" className="box" />
+                        <form onSubmit={handleRegister}>
+                            <input onBlur={handleNameChange} type="text" placeholder="Enter your name" className="box" required />
+                            <input onBlur={handleEmailChange} type="email" placeholder="Enter your email" className="box" required />
+                            <input onBlur={handlePasswordChange} type="password" placeholder="Enter your password" className="box" required />
                             <input type="submit" value="Registation" className="btn" />
                             <div className="link">
-                                <a href="/login">Already a member? Log in</a>
+                                <Link to="/login">Already a member? Click for Log in</Link>
+                                <div className="share">
+                                    <a href="#0" onClick={signInUsingGoogle}>{Google}</a>
+                                </div>
                             </div>
                         </form>
                     </div>

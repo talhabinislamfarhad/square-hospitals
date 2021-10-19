@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 //Json File
 import ServicesData from '../../fake-data/Services.json';
+import { Link } from 'react-router-dom';
 
 
 const Services = () => {

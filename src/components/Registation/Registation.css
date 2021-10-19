@@ -13,6 +13,7 @@
     padding-bottom: 1rem;
     font-size: 1.5rem;
     text-align: start;
+    text-decoration: none;
 }
 
 .registation .row form{
@@ -37,4 +38,25 @@
 
 .registation .row form .btn{
     padding:1rem 4rem;
+}
+.registation .row .share{
+    margin-top: 10px;
+}
+
+.registation .row .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2.3rem;
+    color:var(--green);
+    border-radius: .5rem;
+    border:var(--border);
+    margin:.3rem;
+    padding: 5px 8px;
+}
+
+.registation .row .share a:hover{
+    background:var(--green);
+    color:#fff;
+    box-shadow: var(--box-shadow);
 }

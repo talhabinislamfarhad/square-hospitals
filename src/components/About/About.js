@@ -27,7 +27,7 @@ const About = () => {
                         <h3>SQUARE HOSPITALS LTD</h3>
                         <p>Square Hospitals Limited is a tertiary care hospital and the leading contributor of private healthcare services in Bangladesh. This has been achieved only through consistent commitment.</p>
                         <p>The reputation of Square Hospital is the result of quality clinical outcome and comprehensive care.</p>
-                        <a href="/services" className="btn"> our services {ChevronRight} </a>
+                        <a href="#0" className="btn"> our services {ChevronRight} </a>
                     </div>
 
                 </div>

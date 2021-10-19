@@ -6,6 +6,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 //Json File
 import ServicesData from '../../fake-data/Services.json';
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 
 const Services = () => {
@@ -25,8 +26,10 @@ const Services = () => {
                                 <div className="box">
                                     <img src={services.img} alt="" />
                                     <h3>{services.title}</h3>
-                                    <p>{services.decription}</p>
-                                    <a href="#0" className="btn"> Specific  {ChevronRight} </a>
+                                    <p>{services.shortDecription}</p>
+                                    <Link to={`/single-service/${services.id}`}>
+                                        <Button className="btn">Specific  {ChevronRight}</Button>
+                                    </Link>
                                 </div>
                             </div>
                         )

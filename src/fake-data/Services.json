@@ -2,55 +2,64 @@
     {
         "id": 1,
         "title": "Free Checkups",
-        "decription": "Free Checkups for first time",
+        "shortDecription": "Free Checkups for first time",
+        "longDecription": "Square is an organization with equal emphasis on leadership, technology, quality and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.",
         "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/servies-1.jpg?raw=true"
     },
     {
         "id": 2,
         "title": "24/7 Ambulance",
-        "decription": "We provide you 24/7 Ambulance service",
+        "shortDecription": "We provide you 24/7 Ambulance service",
+        "longDecription": "Square is an organization with equal emphasis on leadership, technology, quality and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.",
         "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/servies-2.jpg?raw=true"
     },
     {
         "id": 3,
         "title": "Expert Doctors",
-        "decription": "We have 140+ Expert Doctors",
+        "shortDecription": "We have 140+ Expert Doctors",
+        "longDecription": "Square is an organization with equal emphasis on leadership, technology, quality and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.",
         "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/servies-3.jpg?raw=true"
     },
     {
         "id": 4,
         "title": "Medicines",
-        "decription": "We have a pharmacy in our hospital",
+        "shortDecription": "We have a pharmacy in our hospital",
+        "longDecription": "Square is an organization with equal emphasis on leadership, technology, quality and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.",
         "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/servies-4.jpg?raw=true"
     },
     {
         "id": 5,
         "title": "Bed Facility",
-        "decription": "In our hospital have 500+ bed facility",
+        "shortDecription": "In our hospital have 500+ bed facility",
+        "longDecription": "Square is an organization with equal emphasis on leadership, technology, quality and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.",
         "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/servies-8.jpg?raw=true"
     },
     {
         "id": 6,
         "title": "Total Care",
-        "decription": "We take care our patient 24/7",
+        "shortDecription": "We take care our patient 24/7",
+        "longDecription": "Square is an organization with equal emphasis on leadership, technology, quality and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.",
         "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/servies-5.jpg?raw=true"
     },
     {
         "id": 7,
         "title": "Online Appointment",
-        "decription": "We provide Online Appointment",
+        "shortDecription": "We provide Online Appointment",
+        "longDecription": "Square is an organization with equal emphasis on leadership, technology, quality and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.",
         "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/servies-7.jpg?raw=true"
     },
     {
         "id": 8,
         "title": "Online Payment",
-        "decription": "You can pay your bill by Online Payment",
+        "shortDecription": "You can pay your bill by Online Payment",
+        "longDecription": "Square is an organization with equal emphasis on leadership, technology, quality and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.",
         "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/servies-9.jpg?raw=true"
     },
     {
         "id": 9,
         "title": "Emergency",
-        "decription": "We also have a Emergency Departments",
+        "shortDecription": "We also have a Emergency Departments",
+        "longDecription": "Square is an organization with equal emphasis on leadership, technology, quality and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.",
         "img": "https://github.com/talhabinislamfarhad/imgs/blob/main/servies-6.jpg?raw=true"
     }
 ]

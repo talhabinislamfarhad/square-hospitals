@@ -13,6 +13,7 @@ import Doctors from './components/Doctors/Doctors';
 import Footer from './components/Footer/Footer';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import SingleServices from './components/SingleServices/SingleServices';
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route exact path="/services">
               <Services></Services>
+            </Route>
+            <Route exact path="/single-service/:id">
+              <SingleServices></SingleServices>
             </Route>
             <Route exact path="/doctors">
               <Doctors></Doctors>

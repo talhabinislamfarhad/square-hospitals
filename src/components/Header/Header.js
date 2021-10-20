@@ -30,7 +30,8 @@ const Header = () => {
                             </Nav.Link>
                             }
                             {user?.email &&
-                                <NavDropdown className="menu-font-size" title={user.displayName} id="basic-nav-dropdown">
+                                <NavDropdown className="menu-font-size" title=
+                                    {user.displayName || user.email} id="basic-nav-dropdown">
                                     <NavDropdown.Item><input onClick={logout} type="submit" value="LogOut" className="btn" /></NavDropdown.Item>
                                 </NavDropdown>
                             }

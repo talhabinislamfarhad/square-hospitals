@@ -57,8 +57,15 @@ const useFirebase = () => {
     }
 
     const registerNewUser = () => {
-        return createUserWithEmailAndPassword(auth, email, password);
-
+        return createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                setError('');
+            })
+            .catch(error => {
+                setError(error.message);
+            })
     }
 
     const setUserName = () => {

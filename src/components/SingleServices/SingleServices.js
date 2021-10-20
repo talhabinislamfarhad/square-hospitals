@@ -9,14 +9,15 @@ const SingleServices = () => {
             .then(res => res.json())
             .then(data => setSingleService(data))
     }, [])
-    const { id } = useParams();
+    const { id, title } = useParams();
     console.log(id);
     const allSingle = singleService.filter(single => single.id === id);
     console.log(allSingle);
     return (
         <div>
             {allSingle[1]?.title}
-            <h1>{allSingle[1]?.title}</h1>
+            <h1>{id}</h1>
+            <h1>{title}</h1>
         </div>
     );
 };

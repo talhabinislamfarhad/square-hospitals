@@ -10,5 +10,5 @@
 * The website made by React, firebase, react-router, etc.
 * In this website has a proper login/registration page.
 * On this website you can log in and registration by your Google Gmail Account.
-* In this website has a private route you can not take an Appointment without login/registration.
+* In this website has a private route you can not take an Appointment & doctors without login/registration.
 * When you have done your login/registration you can see your name on the header and a logout option in the dropdown of your name.

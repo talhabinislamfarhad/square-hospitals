@@ -6,7 +6,7 @@ import Services from '../Services/Services';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faUserMd, faUser, faProcedures, faHospital, faStar } from '@fortawesome/free-solid-svg-icons';
 //Images
-import Banner from '../../images/banner-2.jpg';
+import Banner from '../../images/banner.jpg';
 import Details from '../../images/home-img.svg';
 import ReviewOne from '../../images/pic-1.png';
 import ReviewTwo from '../../images/pic-2.png';
@@ -26,11 +26,12 @@ const Home = () => {
         <div>
             {/* home section starts */}
             <section className="home" id="home" style={{
-                background: `url(${Banner})`
+                background: `url(${Banner})`,
+                backgroundColor: '#000'
             }}>
                 <div className="content">
                     <h3>Stay Safe, Stay Healthy</h3>
-                    <p>Clinical excellence must be the priority for any health care service provider. SQUARE Hospital ensures the best healthcare service.</p>
+                    <p>Clinical excellence must be the priority for any health care service provider.</p>
                     <Link className="btn" to="/about">learn more {ChevronRight}</Link>
                 </div>
             </section>

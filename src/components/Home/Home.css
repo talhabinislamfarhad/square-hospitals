@@ -1,21 +1,11 @@
 .home{
-    flex-wrap: wrap;
-    gap:1.5rem;
     padding-top: 3rem;
     height: 500px;
 }
 
-.home .image{
-    flex:1 1 45rem;
-}
-
-.home .image img{
-    width: 100%;
-}
-
 .home .content{
     flex:1 1 45rem;
-    padding-top: 17%;
+    padding-top: 20%;
 }
 
 .home .content h3{
@@ -23,12 +13,11 @@
     font-weight: 700;
     color:var(--black);
     line-height: 1.8;
-    text-shadow: var(--text-shadow);
 }
 
 .home .content p{
     font-size: 1.7rem;
-    color:var(--light-color);
+    color:var(--black);
     line-height: 1.8;
     padding: 1rem 0;
 }

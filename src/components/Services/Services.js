@@ -27,7 +27,7 @@ const Services = () => {
                                     <img src={services.img} alt="" />
                                     <h3>{services.title}</h3>
                                     <p>{services.shortDecription}</p>
-                                    <Link to={`/single-service/` + services.id + `/` + services.title}>
+                                    <Link to={`/single-service/${services.id}`}>
                                         <Button className="btn">Specific  {ChevronRight}</Button>
                                     </Link>
                                 </div>

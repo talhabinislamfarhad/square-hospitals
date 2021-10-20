@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 //Fake Data
 import DoctorsData from '../../fake-data/Doctors.json';
+import { Link } from 'react-router-dom';
 
 
 const Doctors = () => {
@@ -30,10 +31,10 @@ const Doctors = () => {
                                     <h3>{doctors.name}</h3>
                                     <span>{doctors.Specialty}</span>
                                     <div className="share">
-                                        <a href="#0">{Facebook}</a>
-                                        <a href="#0">{Twitter}</a>
-                                        <a href="#0">{Instagram}</a>
-                                        <a href="#0">{Linkedin}</a>
+                                        <Link to="/appointment" className="icon">{Facebook}</Link>
+                                        <Link to="/appointment" className="icon">{Twitter}</Link>
+                                        <Link to="/appointment" className="icon">{Instagram}</Link>
+                                        <Link to="/appointment" className="icon">{Linkedin}</Link>
                                     </div>
                                 </div>
                             </div>

@@ -15,7 +15,8 @@ const SingleServices = () => {
     console.log(allSingle);
     return (
         <div>
-            {allSingle[0]?.title}
+            {allSingle[1]?.title}
+            <h1>{allSingle[1]?.title}</h1>
         </div>
     );
 };

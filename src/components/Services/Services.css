@@ -13,7 +13,7 @@
 }
 
 .services .box-container .box img{
-    height: 20rem;
+    height: 26rem;
     border:var(--border);
     border-radius: .5rem;
     margin-top: 1rem;
@@ -30,4 +30,10 @@
     color: var(--light-color);
     font-size: 1.4rem;
     line-height: 2;
+}
+
+@media only screen and (max-width: 600px) {
+    .services .box-container .box img{
+        height: 20rem;
+    }
 }

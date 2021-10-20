@@ -7,7 +7,7 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const { user, signInUsingGoogle, processLogin, handleEmailChange, handlePasswordChange } = useAuth();
+    const { signInUsingGoogle, processLogin, handleEmailChange, handlePasswordChange } = useAuth();
     const History = useHistory();
     const Location = useLocation();
     const Redirect = Location?.state?.from || "/";

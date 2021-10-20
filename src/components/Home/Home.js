@@ -26,8 +26,7 @@ const Home = () => {
         <div>
             {/* home section starts */}
             <section className="home" id="home" style={{
-                background: `url(${Banner})`,
-                backgroundColor: '#000'
+                background: `url(${Banner})`
             }}>
                 <div className="content">
                     <h3>Stay Safe, Stay Healthy</h3>

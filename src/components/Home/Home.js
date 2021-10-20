@@ -2,15 +2,16 @@ import React from 'react';
 import './Home.css';
 // All Components
 import Services from '../Services/Services';
-import About from '../About/About';
 // FontAwesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faUserMd, faUser, faProcedures, faHospital, faStar } from '@fortawesome/free-solid-svg-icons';
 //Images
-import Banner from '../../images/home-img.svg';
+import Banner from '../../images/banner-2.jpg';
+import Details from '../../images/home-img.svg';
 import ReviewOne from '../../images/pic-1.png';
 import ReviewTwo from '../../images/pic-2.png';
 import ReviewThree from '../../images/pic-3.png';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -24,14 +25,13 @@ const Home = () => {
     return (
         <div>
             {/* home section starts */}
-            <section className="home" id="home">
-                <div className="image">
-                    <img src={Banner} alt="" />
-                </div>
+            <section className="home" id="home" style={{
+                background: `url(${Banner})`
+            }}>
                 <div className="content">
                     <h3>Stay Safe, Stay Healthy</h3>
                     <p>Clinical excellence must be the priority for any health care service provider. SQUARE Hospital ensures the best healthcare service.</p>
-                    <a href="#0" className="btn"> learn more {ChevronRight} </a>
+                    <Link className="btn" to="/about">learn more {ChevronRight}</Link>
                 </div>
             </section>
             {/* home section ends  */}
@@ -66,7 +66,27 @@ const Home = () => {
             </section>
 
             {/* icons section ends  */}
-            <About></About>
+            {/* Details section starts  */}
+            <section className="details" id="details">
+
+                <h1 className="heading"> <span>Hospital</span> Details </h1>
+
+                <div className="row">
+
+                    <div className="image">
+                        <img src={Details} alt="" />
+                    </div>
+
+                    <div className="content">
+                        <h3>SQUARE HOSPITALS LTD</h3>
+                        <p>Square drives for excellence; the urge to never stand still, to never slow down and to never stop thinking. Square is a corporate giant active in divergent business and industrial fields. Its present unassailable status is the outcome of its successful diversification. Square holds a very strong position as a business leader in this country, and have earned trusted brand image to the people of Bangladesh.</p>
+                        <Link className="btn" to="/services">Our Services {ChevronRight}</Link>
+                    </div>
+
+                </div>
+
+            </section>
+            {/* Details section ends  */}
             <Services></Services>
             {/* review section starts  */}
 

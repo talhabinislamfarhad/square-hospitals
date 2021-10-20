@@ -1,11 +1,10 @@
 # Square Hospitals Ltd.
 
-# This Project is about Hospital Website called Square Hospitals Ltd.
+* This Project is about Hospital Website called Square Hospitals Ltd.
 
-# Square is an organization with equal emphasis on leadership, technology, quality, and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.
+* Square is an organization with equal emphasis on leadership, technology, quality, and passion. It believes in continuous innovation and progress. Its endeavor is to bring the best minds together in a uniquely rich and stimulating environment.
 
-# Live Website Link:
-[https://square-hospital.web.app]( https://square-hospital.web.app)
+* Live Website Link: [https://square-hospital.web.app]( https://square-hospital.web.app)
 
 ## Described the project below with some bullet points
 * The website made by React, firebase, react-router, etc.

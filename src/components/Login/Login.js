@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import { Button } from 'react-bootstrap';
 
 const Login = () => {
     const { signInUsingGoogle, processLogin, handleEmailChange, handlePasswordChange } = useAuth();
@@ -37,7 +38,7 @@ const Login = () => {
                             <div className="link">
                                 <Link to="/registation">Not a member? Click for Sign up</Link>
                                 <div className="share">
-                                    <a href="#0" onClick={signInUsingGoogle}>{Google}</a>
+                                    <Button onClick={signInUsingGoogle}>{Google}</Button>
                                 </div>
                             </div>
                         </form>

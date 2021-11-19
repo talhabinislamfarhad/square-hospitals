@@ -5,9 +5,10 @@ import './Registation.css';
 // FontAwesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { Button } from 'react-bootstrap';
 
 const Registation = () => {
-    const { signInUsingGoogle, setError, setUserName, registerNewUser, handleNameChange, handleEmailChange, handlePasswordChange } = useAuth();
+    const { signInUsingGoogle, registerNewUser, handleNameChange, handleEmailChange, handlePasswordChange } = useAuth();
     const History = useHistory();
     const Location = useLocation();
     const Redirect = Location?.state?.from || "/";
@@ -15,13 +16,9 @@ const Registation = () => {
     const handleRegister = (e) => {
         e.preventDefault();
         registerNewUser()
-            .then(result => {
-                setUserName();
-                History.push(Redirect);
-            })
-            .catch(error => {
-                setError(error.message);
-            })
+        setTimeout(() => {
+            History.push(Redirect);
+        }, 2000)
     }
 
     const Google = <FontAwesomeIcon icon={faGoogle} />
@@ -44,7 +41,7 @@ const Registation = () => {
                             <div className="link">
                                 <Link to="/login">Already a member? Click for Log in</Link>
                                 <div className="share">
-                                    <a href="#0" onClick={signInUsingGoogle}>{Google}</a>
+                                    <Button onClick={signInUsingGoogle}>{Google}</Button>
                                 </div>
                             </div>
                         </form>

@@ -8,7 +8,7 @@ const Footer = () => {
 
             <section className="footer">
                 <div className="box-container">
-                    <div className="credit"> All rights reserved by | <span>Talhabin Islam</span></div>
+                    <div className="credit"> All rights reserved by | <span> Talhabin Islam</span></div>
                 </div>
             </section>
 
